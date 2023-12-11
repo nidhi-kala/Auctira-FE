@@ -22,8 +22,6 @@
                 </span>
               </p>
             </div>
-
-            <!-- Remove from Cart Button -->
             <div class="md:w-1/4 mt-4 md:mt-0 md:text-right">
               <button
                 @click="removeFromCart(index)"
@@ -48,7 +46,7 @@ import { useShoppingStore } from '../store/store';
 
 export default defineComponent({
   setup() {
-    const store = useShoppingStore(); // Access the store using useStore
+    const store = useShoppingStore();
 
     const removeFromCart = (index: number) => {
       store.removeFromCart(index);

@@ -14,8 +14,6 @@
           </span>
           - Count: {{ ticket.count }} - Price: ${{ ticket.price }}
         </p>
-
-        <!-- Add to Cart Button -->
         <button
           @click="addToCart(ticket)"
           class="bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600 mt-2"
@@ -24,8 +22,6 @@
         </button>
       </div>
     </div>
-
-    <!-- If there are no tickets available -->
     <div v-else>
       <p class="text-lg text-center mt-4">
         No tickets available. Create New <router-link to="/admin" class="text-blue-500">here</router-link>.

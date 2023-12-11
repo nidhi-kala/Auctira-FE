@@ -44,12 +44,6 @@
   </div>
 </template>
 
-
-
-
-
-
-
 <script lang="ts">
 import { computed, defineComponent, ref } from 'vue';
 import { useShoppingStore } from '../store/store';
